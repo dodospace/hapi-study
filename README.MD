@@ -2,7 +2,7 @@
 
 # Starting
 
-> npm i
+> npm install
 
 ## 实时监听
 > supervisor app.js
@@ -11,9 +11,10 @@
 
 ## 初始化表结构
 
-> $ node_modules/.bin/sequelize init
+```shh
+node_modules/.bin/sequelize init
 
-```javascript
+
 ├── config                       # 项目配置目录
 |   ├── config.json              # 数据库连接的配置
 ├── models                       # 数据库 model
@@ -24,8 +25,9 @@
 
 ## 创建数据库
 
-```js
+```shh
 node_modules/.bin/sequelize db:create
+
 # 通过 --env 参数，指定为生产环境创建项目数据库
 # node_modules/.bin/sequelize db:create --env production
 ```
